@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="titre">
+        <h1><span class="truetoken">TrueToken</span><br/>Certificat d'Authenticité Numérique</h1>
+        <p><strong>TrueToken</strong> utilise la technologie <strong>BLOCKCHAIN</strong> pour concevoir des certificats d'authenticité infalsifiables.</p>
+        <a class="fonctionnement" href="#container2">En savoir plus</a>
+    </div>
+    <div class="image1">
+        <img src="assets/images/fond.png" alt="">
+    </div>
+</div>
+<div class="container2" id="container2">
+    <div class="block-left">
+        <button type="button" class="block1" data-feature="feature1" (click)="onClick1()" [ngClass]="{ selected: Selected1 === true }">
+            <h2>La BLOCKCHAIN c'est quoi?</h2>
+        </button>
+        <button type="button" class="block2" data-feature="feature2" (click)="onClick2()" [ngClass]="{ selected: Selected2 === true }">
+            <h2>Qu'est-ce qu'un NFT?</h2>
+        </button>
+        <button type="button" class="block3" data-feature="feature3" (click)="onClick3()" [ngClass]="{ selected: Selected3 === true }">
+            <h2>NFT et Sécurité</h2>
+        </button>
+    </div>
+    <div class="block-right">
+        <div class="feature1" [ngClass]="{ selected: Selected1 === true }">
+            <div class="image2">
+                <img src="assets/images/blockchain.png" alt="image blockchain">
+            </div>
+            <div class="texte">
+                <p>La <strong>BLOCKCHAIN</strong> est un mode de stockage et de transmission de données sous forme de blocs liés les uns aux autres et protégés contre toute modification.</p>
+                <a href="https://www.economie.gouv.fr/entreprises/blockchain-definition-avantage-utilisation-application">Voir sur le site du Ministère de l'Économie</a>
+            </div>
+        </div>
+        <div class="feature2" [ngClass]="{ selected: Selected2 === true }">
+            <div class="image2">
+                <img src="assets/images/nft.png" alt="image blockchain">
+            </div>
+            <div class="texte">
+                <p>Un <strong>NFT</strong> (Non Fongible Token) est un jeton numérique non fongible. Il s'agit d'un certificat numérique d'authenticité unique et non interchangeable.</p>
+                <p>Le <strong>NFT</strong> est stocké sur la BLOCKCHAIN.</p>
+            </div>
+        </div>
+        <div class="feature3" [ngClass]="{ selected: Selected3 === true }">
+            <div class="image2">
+                <img src="assets/images/security.png" alt="image blockchain">
+            </div>
+            <div class="texte">
+                <p>Le propriétaire d'un <strong>NFT</strong> le stocke dans son <strong>Portefeuille Numérique</strong> et est le seul à pouvoir intéragir avec celui-ci.</p>
+                <p>Seul le propriétaire du <strong>NFT</strong> peut décider de le transférer vers un autre <strong>Portefeuille Numérique</strong>.</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+@import "/src/assets/styles/colors.scss";
+
+.container {
+    height: 600px;
+    display: flex;
+    flex-flow: row;
+    .partie1 {
+        width: 66%;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        .video {
+            width: 85%;
+            filter: drop-shadow($noir 4px 4px 10px);
+        }
+    }
+    .partie2 {
+        height: 100%;
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        img {
+            height: 100%;
+            filter: drop-shadow($noir 0px 2px 4px);
+        }
+    }
+}
+
+strong {
+    color: $tertiaire;
+    filter: drop-shadow($blanc 2px 2px 10px);
+}
+
+///////////////////////////////////
+/// responsive mobil
+@media all and (max-width: 820px) {
+    .container {
+        height: 100%;
+        flex-flow: column;
+        align-items: center;
+        .partie1 {
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .video {
+                width: 90%;
+            }
+        }
+        .partie2 {
+            width: 90%;
+            img {
+                width: 75%;
+            }
+        }
+    }
+}

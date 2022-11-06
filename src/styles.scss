@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import "/src/assets/styles/colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;  
+    font-family: 'Lato', sans-serif;
+    font-size: 28px; 
+}
+
+h1 {
+    font-size: 48px;
+}
+
+body {
+    background-color: $primaire;
+    margin: 0;
+}
+
+a {
+    color: $noir;
+    &:link {
+        text-decoration: none;
+    }
+    &:visited {
+        color: $noir;
+    }
+}
+
+button {
+    border: none;
+    background: none;
+}
