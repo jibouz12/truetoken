@@ -7,13 +7,18 @@
     font-size: 28px; 
 }
 
-h1 {
-    font-size: 48px;
+html {
+    height: 100%;
 }
 
 body {
+    height: 100%;
     background-color: $primaire;
     margin: 0;
+}
+
+h1 {
+    font-size: 48px;
 }
 
 a {
